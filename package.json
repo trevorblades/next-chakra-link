@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Wraps any custom component with next/link",
   "main": "index.js",
+  "repository": "trevorblades/next-custom-link",
   "scripts": {
     "build": "tsc"
   },
