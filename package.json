@@ -1,0 +1,37 @@
+{
+  "name": "@trevorblades/next-custom-link",
+  "version": "1.0.0",
+  "description": "Wraps any custom component with next/link",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@trevorblades/eslint-config/react",
+      "@trevorblades/eslint-config/typescript"
+    ]
+  },
+  "keywords": [
+    "nextjs",
+    "link",
+    "react",
+    "chakra-ui",
+    "material-ui"
+  ],
+  "author": "Trevor Blades <tdblades@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@trevorblades/eslint-config": "^7.2.1",
+    "@types/node": "^14.14.10",
+    "@types/react": "^17.0.0",
+    "eslint": "^7.14.0",
+    "next": "^10.0.3",
+    "react": "^17.0.1",
+    "typescript": "^4.1.2"
+  },
+  "peerDependencies": {
+    "next": "^10.0.3",
+    "react": "^17.0.1"
+  }
+}
