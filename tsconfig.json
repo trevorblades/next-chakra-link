@@ -4,6 +4,7 @@
   ],
   "compilerOptions": {
     "jsx": "react",
+    "declaration": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
     "target": "ESNext"

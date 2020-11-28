@@ -1,18 +1,11 @@
 {
-  "name": "@trevorblades/next-custom-link",
+  "name": "@trevorblades/next-chakra-link",
   "version": "0.0.2",
-  "description": "Wraps any custom component with next/link",
+  "description": "Wraps any Chakra component with next/link",
+  "author": "Trevor Blades <tdblades@gmail.com>",
+  "repository": "trevorblades/next-chakra-link",
   "main": "index.js",
-  "repository": "trevorblades/next-custom-link",
-  "scripts": {
-    "build": "tsc"
-  },
-  "eslintConfig": {
-    "extends": [
-      "@trevorblades/eslint-config/react",
-      "@trevorblades/eslint-config/typescript"
-    ]
-  },
+  "license": "MIT",
   "keywords": [
     "nextjs",
     "link",
@@ -20,18 +13,33 @@
     "chakra-ui",
     "material-ui"
   ],
-  "author": "Trevor Blades <tdblades@gmail.com>",
-  "license": "MIT",
+  "scripts": {
+    "prepare": "tsc"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@trevorblades/eslint-config/react",
+      "@trevorblades/eslint-config/typescript"
+    ]
+  },
   "devDependencies": {
+    "@chakra-ui/react": "^1.0.1",
+    "@emotion/react": "^11.1.1",
+    "@emotion/styled": "^11.0.0",
     "@trevorblades/eslint-config": "^7.2.1",
     "@types/node": "^14.14.10",
     "@types/react": "^17.0.0",
     "eslint": "^7.14.0",
+    "framer-motion": "^2.9.4",
     "next": "^10.0.3",
     "react": "^17.0.1",
     "typescript": "^4.1.2"
   },
   "peerDependencies": {
+    "@chakra-ui/react": "^1.0.1",
+    "@emotion/react": "^11.1.1",
+    "@emotion/styled": "^11.0.0",
+    "framer-motion": "^2.9.4",
     "next": "^10.0.3",
     "react": "^17.0.1"
   }

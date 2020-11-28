@@ -1,19 +1,20 @@
-import NextLink, {LinkProps} from 'next/link';
+import NextLink, {LinkProps as NextLinkProps} from 'next/link';
 import React from 'react';
+import {Link as ChakraLink} from '@chakra-ui/react';
 
-export interface CustomLinkProps {
+export interface LinkProps {
   href: string;
-  component: React.ElementType;
-  linkProps?: LinkProps;
+  as?: React.ElementType;
+  nextLinkProps?: NextLinkProps;
 }
 
-export const CustomLink: React.FC<CustomLinkProps> = ({
+export const Link: React.FC<LinkProps> = ({
   href,
-  component: Component = 'a',
-  linkProps,
+  as: Component = ChakraLink,
+  nextLinkProps,
   ...props
-}: CustomLinkProps) => (
-  <NextLink href={href} passHref {...linkProps}>
-    <Component {...props} />
+}: LinkProps) => (
+  <NextLink href={href} passHref {...nextLinkProps}>
+    <Component {...props} as="a" />
   </NextLink>
 );
