@@ -1,6 +1,6 @@
 {
   "name": "@trevorblades/next-custom-link",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Wraps any custom component with next/link",
   "main": "index.js",
   "repository": "trevorblades/next-custom-link",
